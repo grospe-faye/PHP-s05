@@ -21,8 +21,8 @@ $login = new Login();
 
 if($_POST['action'] === 'add'){
 	// add function
-	$login->add($_POST['email']);
+	$login->add($_POST['email'], $_POST['password'] );
 }
 
 
-header('Location: ./index.php');
+header('Location: ./indextwo.php');

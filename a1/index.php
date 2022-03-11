@@ -16,22 +16,5 @@
 		<button type="submit">Login</button>
 	</form>
 
-	<?php if (isset($_SESSION['details'])): ?>
-		<?php foreach($_SESSION['details'] as $index => $detail): ?>
-		<div>
-			<form method="POST" action="./server.php" style="display: inline-block;">
-				
-               <input type="hidden" name="action" value="update">
-               <input type="hidden" name="id" value="<?php echo $index; ?>">
-
-               <input type="text" name="email" value="<?php echo $detail->email; ?>">
-              
-			</form>
-
-		</div>
-		<?php endforeach; ?>
-	<?php endif; ?>
-
-
 </body>
 </html>
