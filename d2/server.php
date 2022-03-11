@@ -23,7 +23,7 @@ class TaskList{
 
 	public function remove($id){
 		// array_splice(array, start, length)
-		array_splice($_SESSION['tasks'], $id, 1)
+		array_splice($_SESSION['tasks'], $id, 1);
 	}
 
 	public function clear(){
@@ -47,3 +47,5 @@ else if($_POST['action'] === 'remove'){
 else if($_POST['action'] === 'clear'){
 	$taskList->clear();
 }
+
+header('Location: ./index.php');

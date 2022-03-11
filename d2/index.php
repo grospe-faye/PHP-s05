@@ -27,7 +27,7 @@
                <input type="hidden" name="id" value="<?php echo $index; ?>">
                <input type="checkbox" name="isFinished" <?php echo ($task->isFinished) ? 'checked' : null ;?>>
                <input type="text" name="description" value="<?php echo $task->description; ?>">
-               <input type="submit" name="Update">
+               <input type="submit" value="Update">
 			</form>
 
 			<form method="POST" action="./server.php" style="display: inline-block;">
