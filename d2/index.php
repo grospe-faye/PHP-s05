@@ -40,5 +40,12 @@
 		<?php endforeach; ?>
 	<?php endif; ?>
 
+	<br><br>
+
+	<form method="POST" action="./server.php">
+		<input type="hidden" name="action" value="clear">
+		<button type="submit">Clear all tasks</button>
+	</form>
+
 </body>
 </html>
